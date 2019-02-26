@@ -4,22 +4,26 @@
 	<title>	Freeeze	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header id="header">
 		<img src="images/logo.png">
 		<a href="#" class="hide-desktop">
-                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                    <i class="fa fa-bars" alt="toggle menu" class="menu" id="menu"></i>
         </a>
 		<nav>
                 <ul class="show-desktop hide-mobile" id="nav">
                     <li id="exit" class="exit-btn hide-desktop">
-                        <img src="images/exit.svg" alt="exit menu">
+                        <img src="images/circle.png" alt="exit menu">
                     </li>
 				<li><a href="#" id="active">HOME</a></li>
 				<li><a href="#">ABOUT</a></li>
 				<li><a href="#">BLOG</a></li>
 				<li><a href="#">CONTACT</a></li>
+				 
+  </a>
 			</ul>
 		</nav>
 	</header>
@@ -84,18 +88,7 @@
 	</footer>
 
 	<script>
-    
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('nav');
-        var exit = document.getElementById('exit');
-        menu.addEventListener('click', function(e) {
-            nav.classList.toggle('hide-mobile');
-            e.preventDefault();
-        });
-        exit.addEventListener('click', function(e) {
-            nav.classList.add('hide-mobile');
-            e.preventDefault();
-        });
+  
     </script>
 </body>
 </html>
